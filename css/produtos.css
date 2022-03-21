@@ -1,0 +1,352 @@
+.title-page{
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 40px 0 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    background-color: #111111;
+    z-index: 1;
+}
+.title-page .o-titulopage{
+    height: 200px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+.title-page div h3{
+    font-size: 50px;
+}
+.title-page p{
+    font-size: 18px;
+}
+
+
+
+/* .conteudo-produtos{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.listagem-produtos{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.listagem-produtos .produto{
+    height: auto;
+    width: 900px;
+    margin: 20px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+.imagem-produto{
+    width: 40%;
+    height: 320px;
+    margin:  0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+}
+.imagem-produto img{
+height: 100%;
+width: 100%;
+}
+
+.info-produto {
+    height: auto;
+    max-width: 50%;
+    min-width: 200px;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #302d2d00;
+}
+.title-produto{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+.title-produto h3{
+    color: #000;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title-produto p{
+    min-width: 100px;
+    height: auto;
+    color: #595959;
+    font-size: 17px;
+    font-weight: 400;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+.caracter-produto{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    color: #595959;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 20px;
+    position: relative;
+}
+.caracter-produto img{
+    height: 20px;
+    width: 20px;
+}
+.btnproduto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    color:  #332200;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+    .listagem-produtos .produto{
+        flex-wrap: wrap;
+    }
+    .produto .imagem-produto{
+        width: 60%;
+    }
+    .listagem-produtos .produto .info-produto{
+        max-width: 60%;
+        margin-top: 10px;
+    }
+}
+@media (max-width:500px) {
+    
+} */
+
+.conteudo-produtos{
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listagem-produtos{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.listagem-produtos .produto-page:nth-child(even),.produto-page:nth-child(even) .title-produto{
+    color: #fff;
+    background-color: #111111;
+}
+.listagem-produtos .produto-page{
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    padding: 20px 0 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.imagem-produto{
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-fit: cover;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+.imagem-produto img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.preco_produto{
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    background-color: #302d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.info-produto{
+    height: auto;
+    max-width: 40%;
+    margin: 0 2%;
+    padding: 10px 0 0 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+}
+.title-produto{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.title-page h3{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title-page p{
+    color: #b2b2b2;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-roboto);
+    text-transform: uppercase;
+    margin: 20px 0 13px 0;
+}
+.caracter-produto{
+    width: 100%;
+    max-height: 100%;
+}
+.caracter-produto span{
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #b2b2b2;
+    font-weight: 500;
+    font-size: 18px;
+}
+.caracter-produto span img{
+    height: 30px;
+    width: 30px;
+}
+.listagem-produtos .produto-page:nth-child(even),.produto-page:nth-child(even) .title-produto h3{
+    color: #fff;
+    background-color: #111111;
+}
+.btnproduto{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 10px 0 0 0;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    text-transform: uppercase;
+    color:  #332200;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:830px) {
+    .btnproduto{
+        position: relative;
+    }   
+}
+@media (max-width:660px) {
+    .listagem-produtos .produto-page{
+        width: 100%;
+
+    }   
+    .listagem-produtos{
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    .imagem-produto{
+        width: 100%;
+        min-width: 250px;
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+    .info-produto{
+        height: auto;
+        max-width: 100%;
+    }
+}

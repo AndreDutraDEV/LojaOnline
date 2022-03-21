@@ -1,0 +1,267 @@
+/* HEADER */
+
+.header {
+    width: 100%;
+    background-color: var(--header-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+}
+
+/* NAV */
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__menu{
+    position: fixed;
+    top: -100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition:  .4s;
+    background-color: var(--header-color);
+    box-shadow: 0 0 4px var(--blue-color);
+    padding: 2.5rem 0;
+    width: 90%;
+    border-radius: 4px;
+    z-index: -2;
+    display: none;
+    transition: 2s;
+}
+
+@media (min-width:800px) {
+        #nav-toggle{
+            display: none;
+        }
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.nav__item a{
+    border: 2px orange solid;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+
+.nav__link,
+.nav__logo,
+.nav__toggle{
+    color: var(--text-color);
+    font-weight: var(--fw-nomal);
+}
+
+.nav__logo {
+    font-size: 21px;
+}
+
+.nav__toggle{
+    display: flex;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 30px 5px 30px 40px;
+    display: none;
+    z-index: 900;
+}
+
+.nav__toggle > img{
+    font-size: 2.5rem;
+    cursor: pointer;
+    width: 45px;
+    justify-content: center;
+}
+
+.main-header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    height: 4rem;
+    align-items: center;
+    max-width: 600px;
+}
+
+.header-butons {
+    margin: 6px;
+}
+
+.itens-main-header{
+
+    color: var(--text-color-normal);
+}
+
+.main-header-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    max-width: 700px;
+    min-width: 300px;
+
+}
+
+/* style nav */
+
+.header-butons > a{
+
+    padding: 13px 17px 13px;
+    font-size: 19px;
+    margin: 25px 0px 25px 0px;
+    border-radius: 3px;
+    background-color: rgb(20, 20, 20);
+}
+
+.header-butons > a:hover{
+
+    background-color: #2E2E2E;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+/* SHOW MENU */
+
+.home-data {
+    align-items: center;
+    text-align: center;
+}
+
+.show-menu{
+    top: 60px;
+}
+
+/* -----------------MIDIA CELL------------------------ */
+
+@media (max-width: 800px) {
+
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        transition:  .4s;
+        background-color: var(--header-color);
+        box-shadow: 0 0 4px var(--blue-color);
+        padding: 2.5rem 0;
+        width: 90%;
+        border-radius: 4px;
+        z-index: 900;
+        display: block;
+        transition: 0.6s;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1.5rem;
+    }
+
+    .nav__link,
+    .nav__logo,
+    .nav__toggle{
+        color: var(--text-color);
+        font-weight: var(--fw-nomal);
+    }
+
+    .main-header-1{
+        display: none;
+    }
+
+    .nav__logo {
+        font-size: 21px;
+    }
+
+    .nav__toggle{
+        font-size: 2.5rem;
+        cursor: pointer;
+        display: block;
+        display: flex;
+        align-items: center;
+        transition: 1.3s;
+    }
+
+    .show-menu{
+        top: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.nav__toggle
+{
+    position: relative;
+    width: 55px;
+    height: 30px;
+    background: #000;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.08);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 10px;
+}
+ .nav__toggle span
+{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.nav__toggle span:nth-child(1)
+{
+    transform: translateY(-10px);
+    width: 25px;
+    left: 15px;
+}
+.nav__toggle.active span:nth-child(1)
+{
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+}
+.nav__toggle span:nth-child(2)
+{
+    transform: translateY(10px);
+    width: 15px;
+    left: 15px;
+}
+.nav__toggle.active span:nth-child(2)
+{
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+}
+.nav__toggle.active span:nth-child(3)
+{
+    transform: translateX(60px);
+}
