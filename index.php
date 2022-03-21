@@ -1,5 +1,1 @@
-<?php
-
-header('Location: ./pages/home.php');
-
-?>
+<h1>VÁ PARA: https://andredutradev.github.io/LojaOnline/pages/home.html</h1>
